@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MITS - Micro Information Technology Services</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image"
+        href="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
+        fetchpriority="high">
+    <link rel="preload" as="image" href="https://placehold.co/200x80/2563eb/ffffff?text=MITS" fetchpriority="high">
+</head>
+
+<body>
+    <!-- Sticky Internship Banner -->
+    <div id="internshipBanner" class="internship-banner">
+        <a href="#internship-application" class="banner-content">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Apply for Internship</span>
+        </a>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <img src="assets/mits-logo.png" alt="MITS Logo" class="sidebar-logo">
+            <button id="closeSidebar" class="close-sidebar" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="sidebar-menu">
+            <li>
+                <a href="#internship-application" class="menu-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Internship Application</span>
+                </a>
+            </li>
+            <li>
+                <a href="#offer-letter" class="menu-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Offer Letter Generation</span>
+                </a>
+            </li>
+            <li>
+                <a href="#certificate-verification" class="menu-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certificate Verification</span>
+                </a>
+            </li>
+            <li>
+                <a href="#team-join" class="menu-item">
+                    <i class="fas fa-users"></i>
+                    <span>Team Join Form</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="menu-item">
+                    <i class="fas fa-address-card"></i>
+                    <span>Contact Info</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Sidebar Overlay -->
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="header-logo">
+                <img src="https://placehold.co/200x80/2563eb/ffffff?text=MITS" alt="MITS Logo" loading="eager"
+                    fetchpriority="high" width="200" height="80">
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#internships">Internships</a></li>
+                    <li><a href="#universities">Universities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#internship-application" class="cta-button">Apply Now</a>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Empowering the Next Generation of Tech Innovators</h1>
+                <p class="mission-statement">
+                    To empower the next generation of tech innovators by bridging the gap between academic theory and
+                    real-world application. We provide hands-on internship experiences and foster a network of talent
+                    that drives the future of technology.
+                </p>
+                <div class="hero-cta">
+                    <a href="#internships" class="primary-button">
+                        <i class="fas fa-rocket"></i>
+                        Explore Internships
+                    </a>
+                    <a href="#about" class="secondary-button">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
+                    alt="Students collaborating on a tech project" loading="eager" fetchpriority="high" width="1200"
+                    height="800">
+            </div>
+        </section>
+
+        <!-- University Affiliations Section -->
+        <section id="universities" class="universities-section">
+            <h2>Our University Network</h2>
+            <div class="university-grid">
+                <div class="university-card">
+                    <img src="https://identity.stanford.edu/wp-content/uploads/sites/3/2020/07/reversed-seal-min-new.png"
+                        alt="Stanford University Logo" loading="lazy" width="120" height="120">
+                    <span>Stanford University</span>
+                </div>
+                <div class="university-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/1200px-MIT_logo.svg.png"
+                        alt="Massachusetts Institute of Technology Logo" loading="lazy" width="120" height="120">
+                    <span>Massachusetts Institute of Technology</span>
+                </div>
+                <div class="university-card">
+                    <img src="https://th.bing.com/th/id/OIP.dWLDuGLp2jbg2y3CwlJrBQHaEK?w=300&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                        alt="Carnegie Mellon University Logo" loading="lazy" width="120" height="120">
+                    <span>Carnegie Mellon University</span>
+                </div>
+                <div class="university-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Seal_of_University_of_California%2C_Berkeley.svg/1200px-Seal_of_University_of_California%2C_Berkeley.svg.png"
+                        alt="University of California, Berkeley Logo" loading="lazy" width="120" height="120">
+                    <span>University of California, Berkeley</span>
+                </div>
+                <div class="university-card">
+                    <img src="https://th.bing.com/th/id/OIP.H9DCNsgBs8W0bP_Q6yJynQHaEK?w=285&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                        alt="Harvard University Logo" loading="lazy" width="120" height="120">
+                    <span>Harvard University</span>
+                </div>
+                <div class="university-card">
+                    <img src="https://th.bing.com/th/id/OIP.SHPXUoWOFP7S0PL3bg8kIAAAAA?w=183&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                        alt="Indian Institute of Technology Bombay Logo" loading="lazy" width="120" height="120">
+                    <span>Indian Institute of Technology Bombay</span>
+                </div>
+                <div class="university-card">
+                    <img src="https://th.bing.com/th/id/OIP.Uko6dpbJAbBZzFU05lRkrwHaE8?w=270&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                        alt="National University of Singapore Logo" loading="lazy" width="120" height="120">
+                    <span>National University of Singapore</span>
+                </div>
+                <div class="university-card">
+                    <img src="https://th.bing.com/th/id/OIP.Oa1V-zN8A5TleBl_UujEMAHaJm?w=200&h=200&c=10&o=6&dpr=1.3&pid=genserp&rm=2"
+                        alt="University of Toronto Logo" loading="lazy" width="120" height="120">
+                    <span>University of Toronto</span>
+                </div>
+                <div class="university-card">
+                    <img src="https://th.bing.com/th/id/OIP.x-hNVgCu71rtokUDlwzKjAHaFj?w=193&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                        alt="ETH Zurich Logo" loading="lazy" width="120" height="120">
+                    <span>ETH Zurich</span>
+                </div>
+                <div class="university-card">
+                    <img src="https://th.bing.com/th/id/OIP.jysZt3K4dMuL9pAi6CKp7QHaG-?w=200&h=200&c=10&o=6&dpr=1.3&pid=genserp&rm=2"
+                        alt="University of Oxford Logo" loading="lazy" width="120" height="120">
+                    <span>University of Oxford</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="statistics-section">
+            <h2>Join Our Growing Community</h2>
+            <div class="statistics-grid">
+                <div class="stat-card">
+                    <i class="fas fa-globe"></i>
+                    <div class="stat-content">
+                        <h3>10,000+</h3>
+                        <p>Global Network</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fab fa-linkedin"></i>
+                    <div class="stat-content">
+                        <h3>5,000+</h3>
+                        <p>LinkedIn Followers</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <div class="stat-content">
+                        <h3>500+</h3>
+                        <p>Student Projects</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-user-graduate"></i>
+                    <div class="stat-content">
+                        <h3>1,500+</h3>
+                        <p>Interns Mentored</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="https://placehold.co/200x80/2563eb/ffffff?text=MITS" alt="MITS Logo" class="footer-logo"
+                        loading="lazy" width="200" height="80">
+                    <p>Empowering the next generation of tech innovators through hands-on experience and industry
+                        connections.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#internships">Internships</a></li>
+                        <li><a href="#universities">Universities</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> contact@mits.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MITS. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
